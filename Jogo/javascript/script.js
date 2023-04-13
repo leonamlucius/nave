@@ -16,23 +16,18 @@ function play(){
     var nave = document.querySelector(".navinha")
     var bala = document.querySelector(".bala")
     var clone = document.querySelector(".clone")
+    var num = Number(pn.value)
     pontos.innerHTML = "PONTOS:"
-    pn.innerHTML = Number.parseInt(0)
+    pn.innerHTML = 0
     vidas.innerHTML ="Vidas:"
     vn.innerHTML = '3'
     nave.style.display= "block"
     bala.style.display = "none"
     clone.style.display = "none"
-    
-    if(play.style.display === "none") {
-        play.style.display = "block"
-    
-    
-    } else {
-        play.style.display = "none"
+    play.style.display = "none"
         
     
-    }
+    
     
 }
 document.addEventListener("mousemove", function(e) {
@@ -58,9 +53,6 @@ function atirar(){
 
     bola.style.display = "block"
     clone.style.display = "block"
-   
-       
-    
   
 } 
 function patirar(){
