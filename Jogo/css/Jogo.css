@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(225, 225, 225);
+}
 .play{
     position: absolute;
     margin-left: 45%;
@@ -6,10 +8,10 @@
     width: 10em;
     height: 8em;
     background-color: red;
-    line-height   : 110px;
+    line-height:110px;
     text-align: center;
     border-radius: 20px;
-    box-shadow:5px 10px 10px;
+    box-shadow:5px 15px 15px  rgba(0, 0, 0, 0.541);
     
 }
 .pontos{
