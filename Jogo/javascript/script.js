@@ -1,3 +1,7 @@
+function blackmode(){
+    document.body.style.background = "#262626";
+    document.body.style.color ="white";
+}
 function naveb(){
     var nave = document.querySelector(".navinha")
     var bala  = document.querySelector(".bala")
