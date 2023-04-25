@@ -1,6 +1,12 @@
 function blackmode(){
+    const nave = document.querySelector(".navinha");
+    const bala = document.querySelector(".bala");
+    const clone = document.querySelector(".clone");
     document.body.style.background = "#262626";
     document.body.style.color ="white";
+    nave.src ='img/naveInvertida.png';
+    bala.src = "img/balaI.png";
+    clone.src = "img/bala_cloneI.png";
 }
 function naveb(){
     var nave = document.querySelector(".navinha")
