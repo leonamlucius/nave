@@ -1,4 +1,6 @@
 function blackmode(){
+    var lua = document.querySelector(".lua");
+    var sol = document.querySelector(".sol");
     const nave = document.querySelector(".navinha");
     const bala = document.querySelector(".bala");
     const clone = document.querySelector(".clone");
@@ -7,14 +9,34 @@ function blackmode(){
     nave.src ='img/naveInvertida.png';
     bala.src = "img/balaI.png";
     clone.src = "img/bala_cloneI.png";
+    lua.style.display= "none"
+    sol.style.display = "block"
+
+
+}
+function ligthmode(){
+    var lua = document.querySelector(".lua");
+    var sol = document.querySelector(".sol");
+    const nave = document.querySelector(".navinha");
+    const bala = document.querySelector(".bala");
+    const clone = document.querySelector(".clone");
+    document.body.style.background = "#cccccc";
+    document.body.style.color ="black";
+    nave.src ='img/nave.png';
+    bala.src = "img/bala.png";
+    clone.src = "img/bala_clone.png";
+    lua.style.display= "block"
+    sol.style.display = "none"
 }
 function naveb(){
     var nave = document.querySelector(".navinha")
     var bala  = document.querySelector(".bala")
     var clone = document.querySelector(".clone")
+    var sol = document.querySelector(".sol")
     nave.style.display = "none"
     bala.style.display = "none"
     clone.style.display = "none"
+    sol.style.display = "none"
 
 }
 function play(){
